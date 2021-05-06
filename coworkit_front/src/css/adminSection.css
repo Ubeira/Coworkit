@@ -1,0 +1,161 @@
+.table-generator {
+  display: none;
+}
+
+.card-generator {
+  display: grid;
+}
+.photoDiv {
+  height: 4rem;
+}
+
+.photoDiv img {
+  margin-left: auto;
+  height: 100%;
+  transition: 0.2s;
+}
+
+.photoDiv img:hover {
+  transition: 0.4s;
+  transform: scale(4);
+}
+
+.actionField {
+  display: flex;
+  margin: 0.8rem auto 0 auto;
+  justify-content: center;
+  width: 80%;
+  border-top: 1px solid grey;
+  padding-top: 0.5rem;
+}
+
+.actionButton {
+  border: 1px solid rgba(128, 128, 128, 0.527);
+  width: 3rem;
+  height: 3rem;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  margin: 0 0.5rem;
+  outline: none;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 20%;
+  display: block;
+}
+
+.actionButton.delete {
+  background-image: linear-gradient(
+    to right,
+    #490505 0%,
+    #dd0808 51%,
+    #870000 100%
+  );
+}
+
+.actionButton.edit {
+  background-image: linear-gradient(
+    to right,
+    #000046 0%,
+    #1cb5e0 51%,
+    #000046 100%
+  );
+}
+
+.actionButton.check {
+  background-image: linear-gradient(
+    to right,
+    #418820 0%,
+    #a7eb55 51%,
+    #3f851f 100%
+  );
+}
+
+.actionButton.contact {
+  background-image: linear-gradient(
+    to right,
+    rgb(2, 163, 163) 0%,
+    rgb(0, 255, 234) 51%,
+    rgb(47, 37, 179) 100%
+  );
+}
+
+.actionButton.showPic {
+  background-image: linear-gradient(
+    to right,
+    #78aaf5 0%,
+    #7cf2f8 51%,
+    #567ab1 100%
+  );
+}
+
+.actionButton.save {
+  background-image: linear-gradient(
+    to right,
+    #52c234 0%,
+    #1a5305 51%,
+    #52c234 100%
+  );
+}
+
+.actionButton.undo {
+  background-image: linear-gradient(
+    to right,
+    #4776e6 0%,
+    rebeccapurple 51%,
+    #4776e6 100%
+  );
+}
+
+.actionButton:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  box-shadow: 0 1.8px 1.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 2.3px rgba(0, 0, 0, 0.048), 0 6.5px 5px rgba(0, 0, 0, 0.06),
+    0 11.3px 8.9px rgba(0, 0, 0, 0.072), 0 10.8px 16.4px rgba(0, 0, 0, 0.086),
+    0 10px 5px rgba(0, 0, 0, 0.12);
+}
+
+.fieldIcon {
+  font-size: 1.3rem;
+}
+
+.fieldIcon.disabled {
+  color: rgb(170, 170, 170);
+}
+
+.fieldIcon.enabled {
+  color: rgb(47, 47, 160);
+}
+
+@media (min-width: 1400px) {
+  .card-generator {
+    display: none;
+  }
+
+  .table-generator {
+    display: block;
+  }
+  .actionButton {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin: 0 0.25rem 0 0.25rem;
+    border-radius: 20%;
+    outline: none;
+    color: white;
+  }
+  .actionField {
+    padding: 0;
+    margin: auto;
+    border-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+
+  .photoDiv {
+    height: 4rem;
+  }
+}

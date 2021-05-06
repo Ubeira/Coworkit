@@ -1,0 +1,32 @@
+.bookingsNavItem {
+    border-bottom: 1px solid grey;
+    /* border-top: 1px solid grey; */
+
+}
+
+div.bookingsNavBar>nav {
+    display: flex;
+}
+
+div.bookingsNavBar {
+    z-index: 1;
+    --focus-color: rgba(165, 164, 164, 0.575);
+    --nav-background: white;
+    --font-color: black;
+    position: sticky;
+    top: 2rem;
+    transform: translate(0, 0em);
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid grey;
+    background-color: white;
+}
+
+
+@media (min-width: 700px) {
+
+    div.bookingsNavBar {
+        top: 5.3rem;
+    }
+}

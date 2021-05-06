@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+  /********************************/
+ /***  Estilos del contenedor  ***/
+/********************************/
+.profileInfo{
+    display: grid;
+    grid-template-areas:
+    " . photo . "
+    ".  buttonIcon  ."
+    "button button button "
+    " form form form ";
+    justify-content: center;
+}
+
+  /**********************************************/
+ /***  Estilos del la foto y su contenedor  ****/
+/**********************************************/
+.profileInfoPhoto{
+    grid-area: photo;
+    margin-top: 2rem;
+}
+
+.profileInfoPhoto img{
+    border-radius: 50%;
+    border: 1px black solid;
+}
+
+  /**************************************/
+ /***  Estilos del los formularios  ****/
+/**************************************/
+.userInfoForm , .infoUser{
+display:flex;
+flex-direction: column;
+align-items: center;
+    grid-area: form;
+}
+
+  /**************************************************/
+ /***  Estilos del los botones y su contenedor  ****/
+/**************************************************/
+.buttonContainer{
+    display: flex;
+    grid-area: button;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:.5rem
+}
+
+
+
+ /*****************************************************************/
+ /***  Estilos del los botones que crea el modal version movil ****/
+/****************************************************************/
+
+button.cameraIcon{
+    position: relative;
+    left: 16.3rem;
+    bottom: 3.5rem;
+    width: 4.81rem;
+    height: 4.81rem;
+    grid-area: buttonIcon;
+    background-color:#3f51b5 ;
+    animation-name: showPhotoButton;
+    animation-duration: .7s ;
+    animation-delay: 0 ;
+}
+@keyframes showPhotoButton{ 
+    0%{ transform:  scale(0);background-color:#3f51b500 }  
+    100%{ transform: scale(1);background-color:#3f51b5 }  
+}   
+
+
+button.cameraIcon:hover{
+    background-color:#2a3a92 ;
+}
+
+.cameraIcon svg.MuiSvgIcon-root{
+    width: 3rem;
+    height:2.5rem;
+    
+}
+
+button.deleteIcon{
+    position: relative;
+    right: 1rem;
+    bottom: 3.2rem;
+    width: 4.81rem;
+    height: 4.81rem;
+    grid-area: buttonIcon;
+    background-color:#f50057 ;
+    animation-name: showDeleteButton;
+    animation-duration: .7s ;
+    animation-delay: 0s ;
+}
+@keyframes showDeleteButton{ 
+    0%{ transform: scale(0);background-color:#f5005600 }  
+    100%{ transform: scale(1);background-color:#f50057 }  
+}   
+
+
+button.deleteIcon:hover{
+    background-color:#e03470 ;
+}
+
+.deleteIcon svg.MuiSvgIcon-root{
+    width: 3rem;
+    height:3rem;
+    
+}
+
+.userPaswordEditButton{
+animation-name: showEditPasswordButton;
+animation-duration: .7s ;
+animation-delay: 0s ;
+}
+
+@keyframes showEditPasswordButton{ 
+0%{ transform: translateY(-6rem) scale(0.1);border:#3f51b500 1px solid}  
+100%{ transform: translateY(0) scale(1);background-color:#3f51b5 1px solid} 
+}   
+.userCancelButton{
+animation-name: showCancelButton;
+animation-duration: .7s ;
+animation-delay: 0s ;
+}
+
+@keyframes showCancelButton{ 
+0%{ transform: translateY(-6rem) scale(0.1);border:#3f51b500 1px solid} 
+100%{ transform: translateY(0) scale(1);border:#e03470 1px solid}
+}  
+
+.profileInfo form.userInfoForm{
+animation-name: showEditForm;
+animation-duration: .7s ;
+animation-delay: 0s ;
+}
+
+@keyframes showEditForm{ 
+0%{ transform: translateY(-4rem) }
+100%{ transform: translateY(0) }
+}  
+.profileInfo form.userInfoForm button.userSaveButton{
+    animation-name: showSaveButton;
+    animation-duration: .7s ;
+    animation-delay: 0s ;
+    }
+    
+    @keyframes showSaveButton{ 
+    0%{ transform: translateY(-4rem) scale(0.1,0.1);border:#ffffff00 1px solid; color:rgba(255, 255, 255, 0)} 
+    100%{ transform: translateY(0)} 
+    } 
+.profileInfo div.buttonContainer{
+    animation-name: showEditButton;
+    animation-duration: .7s ;
+    animation-delay: 0s ;
+}
+
+@keyframes showEditButton{ 
+    0%{ transform: translateY(-1rem) scale(0,0);border:#89898a00 1px solid}
+    100%{ transform: translateY(0) scale(1,1);background-color:#3f51b5 1px solid} 
+    }  
+.profileInfo div.infoUser{
+    animation-name: showInfoForm;
+    animation-duration: .7s ;
+    animation-delay: 0s ;
+}
+
+@keyframes showInfoForm{ 
+    0%{ transform: translateY(4rem)}
+    100%{ transform: translateY(0) }
+    }  
+
+
+@media(min-width:700px){
+    
+    /**********************************************************************/
+    /***  Estilos del los botone que crea el modal resto de versiones ****/
+   /*********************************************************************/
+   
+   button.cameraIcon{
+       position: relative;
+       left: 10rem;
+       bottom: 2.2rem;
+       width: 3.5rem;
+       height: 3.5rem;
+   }
+   
+   
+   .cameraIcon svg.MuiSvgIcon-root{
+       width: 2rem;
+       height:3rem;
+       
+   }
+   
+   button.deleteIcon{
+       position: relative;
+       right: 1rem;
+       bottom: 2.2rem;
+       width: 3.5rem;
+       height: 3.5rem;
+   }
+}

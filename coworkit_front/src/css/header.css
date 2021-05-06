@@ -1,0 +1,31 @@
+header.main {
+  --initial-z-index: 100;
+  --focus-color: rgba(165, 164, 164, 0.575);
+  --nav-background: white;
+  --font-color: black;
+  position: sticky;
+  top: 0;
+  transform: translate(0, 0em);
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid grey;
+  background-color: white;
+  z-index: 1000000;
+}
+
+.navItem {
+  width: 100%;
+  min-width: 6rem;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  outline: none;
+}
+
+.navItem:hover,
+.navItem:focus,
+.active {
+  background-color: var(--focus-color);
+}

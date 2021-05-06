@@ -1,0 +1,56 @@
+.card-generator {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  border: 1px solid grey;
+  border-radius: var(--borderRadius);
+  padding: 1rem;
+  padding-top: 2rem;
+  transition: 0.5s;
+}
+
+.cardDataRow {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 0.3rem;
+}
+
+.cardTitle {
+  padding-left: 1rem;
+  margin-right: 1rem;
+  margin-left: 3rem;
+  width: 30%;
+}
+
+.dataField {
+  width: 70%;
+  word-wrap: break-word;
+}
+
+.actionDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .card-generator {
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    margin: auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

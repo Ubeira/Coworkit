@@ -1,0 +1,65 @@
+/* https://source.unsplash.com/random/400x400 */
+
+.recomendationFrame {
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(0, 0, 139, 0.432);
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 27rem;
+}
+
+.recomendationFrame p {
+    text-align: left;
+    text-indent: 1e;
+}
+
+.recomendationFrame>img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    grid-area: photo;
+}
+
+.infoRecomendation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25rem;
+    gap: 1rem;
+}
+
+.infoToRent {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerSpace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 700px) {
+    .recomendationFrame {
+        display: grid;
+        width: 45rem;
+        place-items: center;
+        gap: 1rem;
+        grid-template-areas:
+            "title photo"
+            "button photo "
+        ;
+    }
+}

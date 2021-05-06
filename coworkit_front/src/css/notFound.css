@@ -1,0 +1,38 @@
+.notFound {
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+text-align: center;
+background-color: rgb(51, 95, 153);
+height: 90.75vh;
+gap:1rem;
+font-size: 2rem;
+}
+
+.notFound h1{
+color: red;
+margin-top: 1rem;
+text-shadow: 0 10px 10px white;
+}
+
+.notFound p{
+    margin: 0 2rem;
+    }
+.notFound p:nth-child(2){
+   color: gold;
+        }
+
+
+.notFound img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 20px;
+    border: 2px solid black;
+    }
+
+
+
+.hiddenHeader{
+display: none;
+}

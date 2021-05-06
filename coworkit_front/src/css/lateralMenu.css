@@ -1,0 +1,88 @@
+/* Declaración de variables */
+header {
+  --initial-z-index: 100;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Versión móvil */
+
+/* Overlay (transparencia fuera del menú) */
+#overlay {
+  position: fixed;
+  z-index: var(--initial-z-index);
+  height: 100%;
+  width: 0;
+  background-color: transparent;
+}
+
+#overlay.enabled {
+  transition: background-color 0.3s linear;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(90, 90, 90, 0.5);
+}
+
+/* Menú de navegación (desplegable lateral a la derecha) */
+#menu {
+  position: fixed;
+  right: 0;
+  width: 45%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  z-index: var(--initial-z-index);
+  padding: 0 1rem 0 1rem;
+  border-left: 1px solid rgb(177, 172, 172);
+  background-color: white;
+  transition: 0.8s;
+  transition-timing-function: ease-in;
+  transform: translate(100vh) scaleX(0);
+  padding-top: 2em;
+}
+
+#menu.open {
+  transition: 0.3s;
+  transform: translate(0) scaleX(1);
+}
+
+/* Elementos del menú de navegación */
+.menuItem {
+  width: 100%;
+  min-width: 6rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(177, 172, 172);
+}
+
+/* Título del menú de navegación */
+#menuTitle {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  border-bottom: 2px solid rgb(177, 172, 172);
+}
+
+/* Botón del menú de navegación */
+#navButton {
+  position: fixed;
+  right: 0;
+  top: -1em;
+  z-index: calc(var(--initial-z-index) + 1);
+  outline: none;
+}
+
+@media (min-width: 700px) {
+
+  #menu,
+  #navButton {
+    display: none;
+  }
+}

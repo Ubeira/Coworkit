@@ -1,0 +1,96 @@
+@media (min-width: 1400px) {
+  .table-generator table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 95vw;
+  }
+
+  .table-generator th,
+  .table-generator td {
+    border-bottom: 1px solid rgba(151, 175, 206, 0.7);
+  }
+
+  .table-generator th {
+    padding: 1rem;
+    background-color: rgba(151, 175, 206, 0.288);
+  }
+
+  .table-generator .headerContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .table-generator td {
+    text-align: center;
+    padding: 1rem 0.4rem;
+  }
+
+  .table-generator td .date {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .table-generator .orderButton {
+    font-size: 1.2rem;
+    background-color: transparent;
+    font-weight: bolder;
+    border: 0;
+    margin-left: 0.5rem;
+    outline: none;
+  }
+
+  .table-generator .orderButton:active {
+    background-color: rgba(129, 129, 129, 0.712);
+    outline: none;
+  }
+
+  .table-generator .orderButton.active {
+    background-color: rgba(158, 158, 158, 0.664);
+    outline: none;
+  }
+
+  .table-generator .orderButton.active.asc {
+    transform: rotate(0);
+  }
+
+  .table-generator .orderButton.active.desc {
+    transform: rotate(180deg);
+  }
+  .table-generator .orderButton:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .table-generator .actionField {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+
+  .editOverlay.hidden {
+    display: none;
+    position: absolute;
+    z-index: 600;
+    left: 0;
+    top: 0;
+    height: 100vw;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.027);
+  }
+
+  .editOverlay.shown {
+    display: block;
+    position: absolute;
+    z-index: 600;
+    left: 0;
+    top: 0;
+    height: 100vw;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.027);
+  }
+
+  .table-generator input {
+    width: 90%;
+    height: 1.8rem;
+  }
+}

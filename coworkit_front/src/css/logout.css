@@ -1,0 +1,21 @@
+.logout img{
+width: 2rem;
+}
+
+.logout{
+/* margin-left: .3rem; */
+display: flex;
+align-items: center;
+justify-content: center;
+flex-grow: 1;
+width: 6rem;
+
+}
+
+@media(min-width:700px){
+
+.logout img{
+width: 2.5rem;
+}
+
+}

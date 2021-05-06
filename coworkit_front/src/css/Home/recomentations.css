@@ -1,0 +1,13 @@
+
+
+.recomendations{
+    display: flex;
+gap:.5rem;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+    }
+.recomendationsContainer{
+margin-top: 1rem;
+ text-align: center;   
+}

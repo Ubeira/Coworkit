@@ -1,0 +1,144 @@
+/**************************/
+/*contenedor de la pagina*/
+/************************/
+
+.filterSpacesContainer {
+    background-image: url("https://www.fondos.com/hubfs/WEB/blog/featured-images/mejores-gestoras-de-fondos-de-inversion.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/***************/
+/*header pagina*/
+/***************/
+
+header.filterHeader {
+    font: normal 1.4em Verdana, sans-serif;
+    background: linear-gradient(90deg, var(--darkBlue), var(--lightBlue));
+    width: 80%;
+    border-radius: var(--borderRadius);
+    margin: 15px auto;
+    padding: 5px;
+    text-align: center;
+    box-shadow: var(--light) 10px 5px 15px;
+    color: var(--light);
+    text-shadow: var(--dark) 5px 5px 5px;
+}
+
+/**************/
+/*boton filtro*/
+/**************/
+.filterIcon {
+    height: 3rem;
+    width: 3rem;
+}
+
+.filterButton {
+    border: none;
+    border-radius: var(--borderRadius);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: var(--light);
+    text-shadow: 2px 2px 2px var(--dark);
+    background: linear-gradient(90deg, var(--darkBlue), var(--lightBlue));
+    outline: none;
+    position: sticky;
+    top: 25%;
+    left: 1rem
+}
+
+@media (min-width: 700px) {
+    .filterIcon {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .filterButton {
+        top: 5.8rem;
+        left: 0.5rem;
+        font-size: 2rem;
+        background: none;
+
+    }
+}
+
+/*********************/
+/**tarjetas filtrados*/
+/*********************/
+.filteredSpacesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nombre espacio tarjeta */
+.spaceCard h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+/*Tarjeta*/
+.spaceCard {
+    width: 200px;
+    height: 150px;
+    border: 2px solid var(--darkBlue);
+    border-radius: var(--borderRadius);
+    box-shadow: 3px 3px 5px var(--dark);
+    color: var(--light);
+    text-shadow: 3px 3px 4px var(--dark);
+    display: flex;
+    flex-direction: column;
+}
+
+/*Stars*/
+.spaceCard div {
+    text-align: center;
+    flex-grow: 1;
+}
+
+/*Star*/
+.MuiSvgIcon-root {
+    text-shadow: 3px 3px 4px var(--dark);
+}
+
+/*Efecto card  */
+.spaceCard:hover {
+    transform: scale(1.2);
+    transition-timing-function: ease;
+    transition-duration: 0.8s;
+    z-index: 2;
+}
+
+
+/*********************/
+/**Formulario filtro*/
+/*********************/
+
+.filterSpacesForm {
+    padding: 1rem;
+
+}
+
+.filterSpacesButton {
+    color: var(--light);
+    background: linear-gradient(90deg, var(--darkBlue), var(--lightBlue));
+    padding: 2rem;
+    margin: 2rem;
+    font-size: large;
+    min-width: 90%;
+}
+
+div.priceContainer {
+    margin: 0;
+    padding: 1rem;
+    min-width: 350px;
+}

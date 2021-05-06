@@ -1,0 +1,118 @@
+.footerBackground{
+width: 100vw;
+height: 100%;
+background-image: url("../../assets/footer/footerBg.jpg");
+padding: 1rem 0;
+
+}
+
+.footerContainer{
+
+/* margin-left: 1rem;
+margin-right: 1rem; */
+padding-left: 1rem;
+padding-right: 1rem;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+    .contacts{
+    display: flex;
+    justify-content: center;
+    gap:1.5rem;
+    margin-top: 1rem;
+    }
+        .info,.iconList {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        }
+
+                .address{
+                text-align: center;
+                }
+
+                .address :first-child{
+                font-weight: bolder;
+                font-size: 1rem;
+                }
+
+    .iconList{
+    gap:0;
+    }
+        .socialIcons{
+        margin-top: 1rem;
+        display: flex;
+        gap: 2rem;
+        }
+        .socialIcon{
+        font-size: 4rem;
+        }
+
+.footerLink:visited, .footerLink:link{
+    color:initial;
+    }
+
+.icon{
+font-size: 3rem;
+} 
+.appStoreIcons{
+display: flex;
+gap: 1rem;
+margin: 1rem 0;
+}  
+.appStoreIcons img{
+    width: 10rem;
+}
+
+
+.map{
+width: 90vw;
+height: 20rem;
+border-radius: 10px;
+}
+
+@media (min-width:700px){
+.footerContainer{
+flex-direction: row;
+gap:1rem;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.info{
+    flex-direction: row; 
+}
+.contacts{
+    flex-direction: column; 
+}
+.map{
+    width: 80vw;
+    border-radius: 10px;
+    }
+ }
+
+@media (min-width:1100px){
+.footerContainer{
+    /* padding-right: 1rem; */
+display:grid;
+place-items: center;
+grid-template-columns: 1fr 1fr 2fr;
+grid-template-areas:
+"info icons map";
+}
+.info{
+    flex-direction: row; 
+    grid-area: info;
+}
+.iconList{
+    grid-area: icons;  
+}
+.map{
+    width: 100%;
+    border-radius: 10px;
+    }
+ 
+}

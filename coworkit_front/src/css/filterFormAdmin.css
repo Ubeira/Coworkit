@@ -1,0 +1,71 @@
+.filterContainer {
+  display: grid;
+  place-items: center;
+  margin: 2rem 0;
+}
+
+.filterFormAdmin {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  justify-content: center;
+}
+
+.filterFormAdmin .filterFields {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  background-color: rgba(151, 175, 206, 0.5);
+  border: 1px solid grey;
+  padding: 1rem;
+}
+.filterFormAdmin .filterFields div {
+  display: flex;
+  align-items: center;
+}
+
+.filterFormAdmin .filterFields input {
+  height: 2rem;
+  border: 1px solid grey;
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.filterFormAdmin .filterFields input:focus {
+  box-shadow: 0 1px 1px rgba(6, 49, 240, 0.075) inset,
+    0 0 8px rgba(0, 26, 255, 0.6);
+  outline: none;
+}
+
+.filterFormAdmin .filterButtons {
+  display: grid;
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+}
+
+.filterFormAdmin .filterButtons button {
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 900px) {
+  .filterContainer {
+    display: grid;
+    place-items: center;
+    margin: 2rem 0;
+  }
+
+  .filterFormAdmin {
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    justify-content: center;
+  }
+
+  .filterFormAdmin .filterButtons {
+    display: grid;
+    margin-top: 0;
+    margin-left: 1rem;
+    gap: 0.5em;
+  }
+}

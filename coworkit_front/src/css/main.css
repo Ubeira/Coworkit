@@ -1,0 +1,75 @@
+.button {
+  background-size: 200% auto;
+  transition: 0.5s;
+  border-radius: var(--borderRadius);
+  outline: none;
+}
+
+.button.red {
+  background-image: linear-gradient(
+    to right,
+    #490505 0%,
+    #dd0808 51%,
+    #870000 100%
+  );
+}
+
+.button.blue {
+  background-image: linear-gradient(
+    to right,
+    #000046 0%,
+    #1cb5e0 51%,
+    #000046 100%
+  );
+}
+
+.button.lightgreen {
+  background-image: linear-gradient(
+    to right,
+    #418820 0%,
+    #a7eb55 51%,
+    #3f851f 100%
+  );
+}
+
+.button.yellow {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 196, 0) 0%,
+    rgb(236, 210, 144) 51%,
+    rgb(218, 155, 21) 100%
+  );
+}
+
+.button.lightblue {
+  background-image: linear-gradient(
+    to right,
+    #78aaf5 0%,
+    #7cf2f8 51%,
+    #567ab1 100%
+  );
+}
+
+.button.green {
+  background-image: linear-gradient(
+    to right,
+    #52c234 0%,
+    #1a5305 51%,
+    #52c234 100%
+  );
+}
+
+.button.rebeccapurple {
+  background-image: linear-gradient(
+    to right,
+    #4776e6 0%,
+    rebeccapurple 51%,
+    #4776e6 100%
+  );
+}
+
+.button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  box-shadow: 2px 2px 2px black;
+}

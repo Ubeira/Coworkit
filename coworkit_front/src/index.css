@@ -1,0 +1,96 @@
+:root {
+  --borderRadius: 10px;
+  --darkBlue: #000046;
+  --lightBlue: #1cb5e0;
+  --light: white;
+  --dark: black;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.button {
+  background-size: 200% auto;
+  transition: 0.5s;
+  border-radius: var(--borderRadius);
+  outline: none;
+}
+
+.submitButton {
+  padding: 0.5rem
+}
+
+.button.red {
+  background-image: linear-gradient(to right,
+      #490505 0%,
+      #dd0808 51%,
+      #870000 100%);
+}
+
+.button.blue {
+  background-image: linear-gradient(to right,
+      #000046 0%,
+      #1cb5e0 51%,
+      #000046 100%);
+}
+
+.button.lightgreen {
+  background-image: linear-gradient(to right,
+      #418820 0%,
+      #a7eb55 51%,
+      #3f851f 100%);
+}
+
+.button.yellow {
+  background-image: linear-gradient(to right,
+      rgb(255, 196, 0) 0%,
+      rgb(236, 210, 144) 51%,
+      rgb(218, 155, 21) 100%);
+}
+
+.button.lightblue {
+  background-image: linear-gradient(to right,
+      #78aaf5 0%,
+      #7cf2f8 51%,
+      #567ab1 100%);
+}
+
+.button.green {
+  background-image: linear-gradient(to right,
+      #52c234 0%,
+      #1a5305 51%,
+      #52c234 100%);
+}
+
+.button.rebeccapurple {
+  background-image: linear-gradient(to right,
+      #4776e6 0%,
+      rebeccapurple 51%,
+      #4776e6 100%);
+}
+
+.button:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  box-shadow: 2px 2px 2px black;
+}
+
+/**********/
+/*Errores*/
+/********/
+.error {
+  color: red;
+  text-shadow: 2px 2px 3px black;
+}

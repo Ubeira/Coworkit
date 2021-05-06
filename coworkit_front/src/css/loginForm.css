@@ -1,0 +1,44 @@
+/*section.container.login form {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: var(--borderRadius);
+    padding: 10px;
+    background-color: var(--darkBlue);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 700px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, var(--lightBlue), var(--darkBlue) 1 100%);
+}
+
+
+
+section.container.login form label {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+section.container.login form input {
+    margin: 0.5em 4em 0.5em 4em;
+    border-radius: var(--borderRadius);
+
+}
+
+section.container.login form button {
+    border-radius: var(--borderRadius);
+    margin: 1em 4em 0.5em 4em;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 8, 255, 0.652);
+    text-shadow: 1px 1px 1px black;
+}
+
+
+section.container.login header h1 {
+    text-align: center;
+}*/

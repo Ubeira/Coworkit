@@ -1,0 +1,140 @@
+.we {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.we div {
+    display: flex;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.we ul {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: var(--borderRadius);
+    color: var(--light);
+    width: 100%;
+    margin-top: 15rem;
+    text-shadow: 2px 2px 2px var(--dark);
+    height: 100%;
+    box-shadow: 0 0 2px 2px white;
+    font-size: 2rem;
+    list-style: none;
+    padding: 1rem;
+}
+
+.we ul li {
+    padding: 2rem 0;
+    margin: 1rem;
+}
+
+.section {
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+}
+
+.static::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(1);
+    background-size: 100%;
+    z-index: -1;
+
+}
+
+
+
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-10px) scale(4);
+    background-size: 100%;
+    z-index: -1;
+}
+
+/* Backgrounds generales*/
+.static {
+    border-radius: var(--borderRadius);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.bg::after {
+    border-radius: var(--borderRadius);
+    background-repeat: no-repeat;
+    margin-right: 90rem;
+    margin-left: -90rem;
+    background-size: 20% 30%;
+    background-size: contain;
+}
+
+/* Backgrounds statics */
+.static1 {
+    background-image: url('../../assets/principal/Julian.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+}
+
+.bg1::after {
+    background-image: url('../../assets/principal/robot.jpeg');
+    background-repeat: no-repeat;
+    margin-right: 90rem;
+    margin-left: -90rem;
+
+}
+
+.static2 {
+    background-image: url('../../assets/principal/Iago.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+/* Background translate */
+
+.bg2::after {
+    background-image: url('../../assets/principal/fisica.jpg');
+    background-repeat: no-repeat;
+    margin-right: -90rem;
+    margin-left: 90rem;
+
+}
+
+.bg3::after {
+    background-image: url('../../assets/principal/raulFondo.jpg');
+    background-repeat: no-repeat;
+    margin-right: 90rem;
+    margin-left: -90rem;
+}
+
+.static3 {
+    background-image: url('../../assets/principal/raul.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}

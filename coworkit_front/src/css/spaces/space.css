@@ -1,0 +1,381 @@
+.spaceFather {
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/white/white-unsplash-9d0375d2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    justify-content: center;
+
+}
+
+.SpaceContainer {
+    display: grid;
+    grid-template:
+        'spaceCarousel  '
+        ' spaceForm '
+        'description'
+        'reviewSlider '
+    ;
+    grid-template-rows: 250px 1fr 1fr 100px;
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.74);
+    background-size: cover;
+    margin: 0 2rem;
+
+}
+
+/**********************/
+/***Carousel general***/
+/********************/
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+
+}
+
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.swipe-wrap>div {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.nextArrow,
+.prevArrow {
+    height: 2rem;
+    width: 2rem;
+}
+
+/**********************/
+/***Carousel photos***/
+/********************/
+.spaceCarousel {
+    grid-area: spaceCarousel;
+    padding: 1rem;
+    max-width: 100vw;
+}
+
+.spaceCarousel header {
+    text-align: center;
+}
+
+.spaceCarousel .carousel img {
+    width: 100vw;
+}
+
+section h2.error {
+    color: red;
+}
+
+.nextButton,
+.prevButton {
+    outline: none;
+}
+
+
+
+button.prevButton,
+button.nextButton {
+    background-color: inherit;
+    border: none;
+    padding: 2.5rem;
+    flex-grow: 1;
+}
+
+.carouselContainer {
+    display: flex;
+    max-width: 380px;
+    max-height: 300px;
+    margin: auto;
+
+}
+
+/*****************/
+/***Formulario***/
+/***************/
+.spaceForm {
+    grid-area: spaceForm;
+    padding: 0 2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.spaceForm section {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+
+}
+
+.spaceForm h2 {
+    color: var(--dark);
+    text-shadow: 4px 4px 6px var(--light);
+    font-weight: bold;
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
+
+.packButton {
+    background: linear-gradient(90deg, var(--darkBlue), var(--lightBlue));
+    border: 1px solid var(--dark);
+    color: white;
+    width: fit-content;
+    border-radius: var(--borderRadius);
+    padding: 0.5rem 1.5rem;
+    transition: 0.4s;
+}
+
+.MuiPaper-root.MuiDialog-paper {
+    margin-top: 5rem;
+}
+
+.modal p {
+    max-height: 60vh;
+}
+
+.modal {
+    margin-top: 0;
+}
+
+.modal div {
+    border-radius: var(--borderRadius);
+}
+
+.packsContainer .modal button {
+    border-radius: var(--borderRadius);
+    color: var(--light);
+    background: linear-gradient(90deg, var(--darkBlue), var(--lightBlue));
+}
+
+.modal img {
+    max-width: 300px;
+    max-height: 200px;
+
+}
+
+
+/**************/
+/***reviews***/
+/************/
+
+.reviewSlider {
+    justify-content: center;
+    grid-area: reviewSlider;
+    padding: 0;
+    max-width: 100vw;
+    margin: 0;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+
+.reviewSlider .prevArrow {
+    width: 30px;
+    height: 30px;
+}
+
+.prevArrow:hover,
+.nextArrow:hover {
+    border-radius: 100%;
+    padding: 0.2rem;
+    box-shadow: 2px 2px 2px var(--dark);
+}
+
+.reviewSlider .nextArrow {
+    width: 30px;
+    height: 30px;
+}
+
+.reviewSlider div div {
+    text-align: center;
+    padding: 0rem;
+    margin: 0;
+    min-width: 70%;
+}
+
+.reviewCard {
+    display: flex;
+
+}
+
+.reviewSlider header {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+}
+
+.reviewSlider img {
+    width: 50px;
+    height: 50px;
+}
+
+.reviewCard p {
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+/**************/
+/*Description*/
+/************/
+.descriptionContainer {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--borderRadius);
+    grid-area: description;
+    padding: 2rem;
+
+}
+
+.descriptionContainer header {
+    color: var(--dark);
+    text-decoration: underline solid var(--dark);
+    text-shadow: 1px 1px 5px var(--light);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.descriptionContainer section {
+    text-indent: 1rem;
+    display: flex;
+}
+
+.descriptionContainer section p {
+    flex-grow: 1;
+    padding-left: 1rem;
+    min-width: 200px;
+}
+
+.descriptionContainer section ul {
+
+    padding-left: 1rem;
+    min-width: 150px;
+}
+
+
+.spaceDetails {
+    padding-bottom: 1rem;
+    list-style: none;
+}
+
+.spaceDetails li {
+    padding-bottom: 0.5rem;
+}
+
+
+.articleContainerSpaces .carouselContainer .carousel img {
+    max-width: inherit;
+    max-height: inherit;
+    border: 2px solid var(--dark);
+
+}
+
+
+section.packsContainer .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButtonGroup-grouped.Button {
+    border-bottom-right-radius: var(--borderRadius);
+    border-bottom-left-radius: var(--borderRadius);
+    background-image: linear-gradient(to right,
+            #000046 0%,
+            #1cb5e0 51%,
+            #000046 100%);
+}
+
+@media (min-width: 700px) {
+
+    .carouselContainer,
+    .reviewSlider {
+        display: flex;
+        max-width: 400px;
+        max-height: 500px;
+    }
+
+    .articleContainerSpaces {
+        margin: 0;
+        padding: 0;
+    }
+
+    article.descriptionContainer {
+        padding-left: 0;
+    }
+
+    button.nextButton,
+    button.prevButton {
+        padding: 0.5rem;
+    }
+
+    .SpaceContainer {
+        margin: 0.5rem;
+        display: grid;
+        grid-template-rows: 250px 250px 250px 1fr;
+        grid-template-columns: 1fr 300px;
+        grid-template:
+            'spaceCarousel description '
+            ' spaceCarousel description'
+            'spaceForm spaceForm'
+            'reviewSlider  reviewSlider'
+        ;
+    }
+
+    .descriptionContainer section ul {
+        padding-left: 0;
+    }
+}
+
+
+@media (min-width: 900px) {
+
+    .carouselContainer,
+    .reviewSlider {
+        display: flex;
+        max-width: 625px;
+        max-height: 700px;
+
+
+    }
+
+
+
+    .articleContainerSpaces .carouselContainer .carousel img {
+        max-width: inherit;
+        max-height: inherit;
+        border: 2px solid var(--dark);
+
+    }
+
+    html {
+        width: 100%;
+    }
+
+    .SpaceContainer {
+        width: 100%;
+        padding-bottom: 3rem;
+        display: grid;
+        grid-template-rows: 400px 250px 1fr;
+        grid-template-columns: 300px 1fr;
+        grid-template:
+            'spaceCarousel      description description '
+            ' spaceCarousel  description description'
+            'reviewSlider   spaceForm spaceForm'
+
+        ;
+    }
+}

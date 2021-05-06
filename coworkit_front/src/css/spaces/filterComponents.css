@@ -1,0 +1,38 @@
+.priceContainer {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 0.5rem 1rem 0 2rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+@media (min-width: 700px) {
+    .priceContainer {
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 3rem 10rem 0 10rem;
+        font-size: 2rem;
+    }
+
+
+}
+
+.filterSpacesForm {
+    padding-top: 1rem;
+}
+
+.filterSpacesForm h2 {
+    width: 100px
+}
+
+.button.filterSpacesButton {
+    color: var(--light);
+    background: linear-gradient(90deg, var(--darkBlue), var(--lightBlue));
+    padding: 0.5rem;
+    margin: 1rem;
+}

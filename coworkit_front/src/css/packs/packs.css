@@ -1,0 +1,30 @@
+.materialUi {}
+
+section.packsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 2rem 0
+}
+
+section.packsContainer {
+    max-height: 80vh;
+}
+
+section.packsContainer .MuiButtonGroup-root.materialUi.MuiButtonGroup-contained.MuiButtonGroup-vertical.button {
+    border: var(--borderRadius);
+    background-color: blue
+}
+
+
+.MuiButtonGroup-vertical {
+    border: var(--borderRadius);
+    padding: 0.3rem;
+    border: 1px solid var(--dark);
+
+}
+
+.MuiButtonGroup-vertical img {
+    width: 100%;
+}

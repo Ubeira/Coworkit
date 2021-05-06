@@ -1,0 +1,22 @@
+#easterEggContainer {
+  top: 5rem;
+  display: grid;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  text-align: center;
+}
+
+#easterEggContainer span {
+  font-size: larger;
+}
+#easterEggContainer span:first-child {
+  font-size: larger;
+  font-weight: 600;
+}
+#easterEggGif:hover {
+  pointer-events: none;
+}

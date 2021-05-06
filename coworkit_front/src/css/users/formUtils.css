@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+  /***************************************************/
+ /***  Estilos del componentes input y sus label  ***/
+/***************************************************/
+.inputField{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField input{
+    border-radius: 10px;
+    border: black solid;
+    background-color: rgba(255, 255, 255, 0.26);
+    color: black;
+    font-size: 1.1rem;
+    margin: .4rem 1.5rem;
+    padding: .5rem .5rem;
+    margin-top: 0.2rem;
+    
+}
+.inputField label{
+
+    padding: .5rem;
+    padding-top: .5rem; 
+        
+    }
+
+
+
+  /*******************************/
+ /***  Estilos del FormPhoto  ***/
+/*******************************/
+form.formPhoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputFormPhoto{
+    border: #3f51b5 solid;
+    border-radius: 20px;
+    margin: .5rem 0;
+    padding: .5rem 0;
+}
+.inputFormPhoto::-webkit-file-upload-button {
+    border: #3f51b5 2px  solid;
+    border-radius: 20px;
+    background-color: #3f51b5;
+    padding: .8rem .4rem;
+    margin-left: .5rem;
+    color: whitesmoke;
+  }
+  
+
+  /****************************************/
+ /***  Estilos del FormChangePassword  ***/
+/****************************************/
+
+form.formChangePassword {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem;
+    margin-top: 2rem;
+}
+
+.inputFieldFormChangePassword{
+text-align: center;
+width: 20rem;
+border: 1px solid black;
+border-radius: 20px;
+padding: .7rem;
+outline: none;
+}
+
+  /**************************************/
+ /***  Estilos del FormCreateReview  ***/
+/**************************************/
+
+.formCreateReview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+  /****************************************************/
+ /***  Estilos del input con errores configurados  ***/
+/****************************************************/
+
+
+.formCreateReview textarea{
+    margin-bottom: 1rem;
+}
+
+.formCreateReview > textarea{
+    padding: .5rem;
+}
+
+.formEditSpace{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 30rem;
+padding: .5rem 1rem;
+}
+.formEditSpace div.inputField{
+justify-content: center;
+align-items: center;
+}
+
+ /*****************************************************/
+ /***  Estilos del formulario formDeleleSpacePhoto ***/
+/****************************************************/
+.formDeleteSpacePhotos{
+/* margin-top: 1rem; */
+/* display: flex;
+flex-direction: column; */
+
+
+}
+.MuiPaper-root.MuiDialog-paper {
+/* margin-top: rem; */
+}
+.modal p{
+max-height: 80vh;
+overflow-y: scroll;
+}
+.formDeleteSpacePhotos > button{
+margin-bottom: .5rem;
+position: sticky;
+top: 0rem; 
+
+}
+
+.spacePhoto div >input{
+display:none;
+}
+.spacePhoto  img{
+width: 30rem;
+}
+
+
+.delete >img{
+    background: red;
+    filter: opacity(.7) drop-shadow(0 0 0 rgb(255, 0, 0));
+    border: 2px solid red;
+
+  
+   }
+   

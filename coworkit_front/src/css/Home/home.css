@@ -1,0 +1,85 @@
+/*********/
+/***Home**/
+/*********/
+
+
+.sectionHome {
+    min-height: 80vh;
+    margin: 1rem 0;
+}
+
+.homeContainer {
+    background-image: url("../../assets/principal/Edificio_alto.jpg");
+    z-index: -100;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.parallaxContainer {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(200px);
+    backdrop-filter: grayscale(80%);
+    overflow: hidden;
+}
+
+.sectionHome h1.principal,
+.title {
+    font: normal 2.4em Verdana, sans-serif;
+    background: linear-gradient(90deg, var(--darkBlue), var(--lightBlue));
+    background: -moz-linear-gradient(top, #00F, #3FF);
+    background: -o-linear-gradient(top, #00F, #3FF);
+    background: -ms-linear-gradient(top, #00F, #3FF);
+    width: 80%;
+    border-radius: 15px;
+    margin: 15px auto;
+    padding: 5px;
+    text-align: center;
+    box-shadow: var(--light) 3px 3px 5px;
+    color: var(--light);
+    text-shadow: black 5px 5px 5px;
+}
+
+.sectionHome .whatYouNeed img {
+    width: 200px;
+    height: 150px;
+    border: 2px solid var(--darkBlue);
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.sectionHome img:hover {
+    transform: scale(1.2);
+    transition-timing-function: ease;
+    transition-duration: 0.8s;
+    z-index: 2;
+}
+
+.parallaxContainer {
+    overflow: hidden;
+}
+
+article.whatYouNeed {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+article.whatYouNeed figcaption {
+
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--light);
+    text-shadow: 2px 2px 2px var(--dark);
+}
+
+.whatYouNeed figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

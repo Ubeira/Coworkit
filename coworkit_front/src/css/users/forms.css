@@ -1,0 +1,53 @@
+section.container {
+    padding: 1rem;
+    max-width: 80%;
+    font-size: 2rem;
+    border-radius: var(--borderRadius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.container button {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+section.container div.inputField input {
+    border-radius: 0;
+}
+
+.fatherForms {
+    background: url("../../assets/forms/blue-white.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.validationEmail h1 {
+    padding: 1rem;
+}
+
+@media (min-width: 600px) {
+    section.register {
+        padding-top: 0;
+    }
+
+    section.register form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 0;
+    }
+
+    .fatherForms {
+        margin-top: 0;
+        align-items: flex-start;
+    }
+}

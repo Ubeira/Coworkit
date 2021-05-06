@@ -1,0 +1,27 @@
+.profileIcon{
+display: flex;
+/* flex-direction: column; */
+align-items: center;
+justify-content: center;
+gap: .2rem;
+/* flex-grow: 2; */
+width: 8rem;
+}
+.profileIcon img{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+@media(min-width:700px){
+.profileIcon{
+
+/* width: 10rem; */
+}
+.profileIcon img{
+
+width: 3rem;
+height: 3rem;
+}
+}

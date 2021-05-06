@@ -1,0 +1,20 @@
+.nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  z-index: var(--initial-z-index);
+  background-color: var(--nav-background);
+}
+#adminBar {
+  display: flex;
+}
+
+@media (min-width: 700px) {
+  .nav {
+    display: flex;
+  }
+}
